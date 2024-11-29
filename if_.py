@@ -72,9 +72,9 @@
 #                                                          # input('문자')로 쓰면 자신이 쓴 문자가 먼저 앞에 뜨고 input을 실행한다.
 #                                                         # (예)input('나') 결과 == 나 [](입력하기)
 
-# if(12 >= age):
+# if(12 > age):
 #     print('죄송합니다.')
-# elif(12 < age):                                         # 12 <= 을 할경우 미만이 되므로(12에게) 같은 수를 포함 안할려면
+# elif(12 <= age):                                         # 12 <= 을 할경우 미만이 되므로(12에게) 같은 수를 포함 안할려면
 #     print('즐거운 관람되세요.')                          # 12 < age 를 해야 됨.
 
 
@@ -89,3 +89,73 @@
 #     print('짝수입니다.')
 # elif(number % 2 == 1):
 #     print('홀수입니다.')
+
+
+# ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ #
+
+
+# not       : True면 False , False면 True로 결과를 뒤집음.
+# and       : 양옆이 모두 True 면 True, 둘중 하나라도 False면 False
+# or        : 양옆이 모두 False면 False, 둘중 하나라도 True면 True
+# 실행 순서 not, and, or 순서로 실행 됨
+
+# a = 10
+# b = 2 
+# if(a == 10 and b == 2):
+#     print("a는 10, b는 2입니다.")
+
+# if(a == 10 or b == 10):
+#     print("a와 b 둘중 한개 이상은 10 입니다.")
+
+# if(not a == 5):
+#     print("a는 5가 아닙니다.")
+
+
+# ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ #
+
+
+
+# print("두 개의 숫자를 입력해주세요")
+# number1 = int(input())
+# number2 = int(input())
+
+# print("어떤 계산을 실행 할까요?")
+# print("(1:곱하기, 2:나누기, 3:더하기, 4:빼기)")
+# pickednumber = int(input())
+
+# if(pickednumber == 1):
+#     print("곱하기를 선택하셨습니다.", number1, '*', number2, '=', number1 * number2, "입니다.")     # 같이 넣을때는 !꼭!콤마(,)넣기.
+# elif(pickednumber == 2):
+#     print("나누기를 선택하셨습니다.", number1, '/', number2, '=', number1 // number2, "입니다.")
+# elif(pickednumber == 3):
+#     print("더하기를 선택하셨습니다.", number1, '+', number2, '=', number1 + number2, "입니다.")
+# elif(pickednumber == 4):
+#     print("빼기를 선택하셨습니다.", number1, '-', number2, '=', number1 - number2, "입니다.")
+# else:
+#     print("잘못 선택하셨습니다.")
+
+
+# ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ #
+
+
+# 중첩 if
+# if의 경우 중첩해서 사용가능
+
+age = int(input("나이를 입력하세요."))
+is_member = input("회원 여부를 입력하세요.(yes 또는 no) ")
+if(age >= 19):
+    if(is_member == "yes"):
+        print("성인 회원님, 환영합니다!")
+    elif(is_member == "no"):
+        print("성인 비회원님, 회원 가입을 해주세요.")
+    else:
+        print("대답은 yes,no로만 해주세요.")
+else:
+    if(is_member == "yes"):
+        print("청소년 회원님, 환영합니다!")
+    elif(is_member == "no"):
+        print("청소년 비회원님, 회원 가입을 해주세요.")
+    else:
+        print("대답은 yes,no로만 해주세요.")
+
+
