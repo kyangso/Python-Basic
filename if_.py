@@ -141,21 +141,21 @@
 # 중첩 if
 # if의 경우 중첩해서 사용가능
 
-age = int(input("나이를 입력하세요."))
-is_member = input("회원 여부를 입력하세요.(yes 또는 no) ")
-if(age >= 19):
-    if(is_member == "yes"):
-        print("성인 회원님, 환영합니다!")
-    elif(is_member == "no"):
-        print("성인 비회원님, 회원 가입을 해주세요.")
-    else:
-        print("대답은 yes,no로만 해주세요.")
-else:
-    if(is_member == "yes"):
-        print("청소년 회원님, 환영합니다!")
-    elif(is_member == "no"):
-        print("청소년 비회원님, 회원 가입을 해주세요.")
-    else:
-        print("대답은 yes,no로만 해주세요.")
+# age = int(input("나이를 입력하세요."))
+# is_member = input("회원 여부를 입력하세요.(yes 또는 no) ")
+# if(age >= 19):
+#     if(is_member == "yes"):
+#         print("성인 회원님, 환영합니다!")
+#     elif(is_member == "no"):
+#         print("성인 비회원님, 회원 가입을 해주세요.")
+#     else:
+#         print("대답은 yes,no로만 해주세요.")
+# else:
+#     if(is_member == "yes"):
+#         print("청소년 회원님, 환영합니다!")
+#     elif(is_member == "no"):
+#         print("청소년 비회원님, 회원 가입을 해주세요.")
+#     else:
+#         print("대답은 yes,no로만 해주세요.")
 
 
