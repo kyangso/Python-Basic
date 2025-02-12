@@ -192,11 +192,66 @@
 #     listinf.append(infnum)      # 어펜드는 맨 뒤에 추가하는것. 쓰는법은 84번 라인 확인
 #     # print(listinf)            
 
-# # print(listinf)
+# print(listinf)
 # avg = sum(listinf) // len(listinf)
 # print("평균은", avg, "입니다.")
 
 
-# ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ #
+# +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ #
+
+
+# in
+# in은리스트에해당값이 있는지 없는지를 True,False로 알려줌, if에 주로 사용
+# 찾을값 in 리스트명
+# 위형식으로사용함
+# numbers = [ 1, 2, 3, 4, 5]
+# print(2 in numbers)
+# print(8 in numbers)
+
+
+
+# +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ #
+
+# 이중 리스트 ( 이 차 원 리 스 트)
+# 하나의 리스트 내부에 또다른 리스트가 있는 경우
+# 내부 리스트의 값을 참조할때는 []을 두번사용 한다
+# list1 = [1, 'cit', True]
+# list2 = [3, 2, 'py']
+# list3= [list1, list2]
+# print(list1)
+# print(list2)
+# print(list3)
+# print(list3[0][1])
+# print(list3[1][1])
+# print(list3[0])
+
+
+# +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ #
+
+
+# Cafe = ['Starlucks', 'Mollys', 'Emiya', 'FomAFams']
+# Main = ['Americano', 'Cappuccino', 'Cafelatte', 'Americano']
+# Price = [3700, 4600, 3200, 4100]
+# Location = ['A Street', 'B Street', 'C Street', 'D Street']
+# CafeTable = [Cafe, Main, Price, Location]
+# print(CafeTable)
+# print()
+
+# 이중 리스트 내용을 한줄씩 보기
+# for i in CafeTable:
+#     print(i)
+# print()
+
+# 가격의 정보만 출력
+# print(CafeTable[2])
+# print()
+
+# Mollys의 정보만 출력
+# for i in range(len(CafeTable)):
+#     print(CafeTable[i][1], end=' ')
+# print()
+
+
+# +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ #
 
 

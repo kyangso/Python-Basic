@@ -117,7 +117,7 @@
 
 # break
 # break를 만나는 순간 반복문 종료
-# 보통의 경우 break는ㄴ if랑 같이 사용
+# 보통의 경우 break는 if랑 같이 사용
 
 # i = 0
 # while(True):
