@@ -201,9 +201,9 @@
 
 
 # in
-# in은리스트에해당값이 있는지 없는지를 True,False로 알려줌, if에 주로 사용
-# 찾을값 in 리스트명
-# 위형식으로사용함
+# in은리스트에해당값이있는지없는지를 True,False로 알려줌,if에주로사용
+# 찾을값in리스트명
+# 아래래형식으로사용함
 # numbers = [ 1, 2, 3, 4, 5]
 # print(2 in numbers)
 # print(8 in numbers)
