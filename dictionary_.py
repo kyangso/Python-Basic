@@ -98,55 +98,18 @@ print()
 print()
 
 print('#2 아메리카노 가격의 합을 구하시오.')
-# for i in Americano.values():
-#     print (i, end="+")
-# print("0 = 17500 ")
+hapge = 0                       # 누적 덧셈 등 반복문에 변수가 필요한 경우 변수는 무조건 반복문 밖에
+                                # 어떤 기능(을/를)만들거나 추가할땐 변수를 최소 1개 이상 만드는게 쉽다.
+for i in Americano.values():
+    hapge = hapge + i           # hapge += i
 
+print(hapge)
+print()
 
+print("#3 아메리카노 가격읭 평균을 구하시오.")
+print(hapge // len(Americano))  # //쓰면 소수단위가 안된다.
+print()
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+print("#4 itmes()함수를 이용하여 오른족관 같이 추가하시오")
+for key, value in Americano.items():
+    print('brand:', key, ", price:", value)

@@ -131,7 +131,7 @@
 
 
 # while(True):
-#     print("메뉴를 선택해주세요")
+#     print("선택지를 선택해주세요")
 #     print("[1. hello 출력]")
 #     print("[2. hi 출력]")
 #     print("{3. 나 가 기}")
@@ -142,7 +142,7 @@
 #     elif(menu == 2):
 #         print("hi")
 #     elif(menu == 3):
-#         print("메뉴 프로그램을 종료합니다.[삐비비빅-.]")
+#         print("나 가 기[3]을 선택하셨습니다 메뉴 프로그램을 종료합니다..")
 #         break
 #     else:
 #         print("1~3 숫자만 입력이 가능합니다.")

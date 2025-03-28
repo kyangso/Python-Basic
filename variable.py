@@ -107,7 +107,7 @@
 
 # print('환영합니다.', name, '님. 나이를 입력해주세요.')      # 여러개를 입력할때엔 print()하나에 넣지 않고 콤마(,)를 쓴다.
 # age = input()
-# year = 2024
+# year = 2025
 # age = int(age)          # int(age)만 적으면 *그 줄*만 저장되고 나머진 똑같기에 저장할떄엔 꼭 (문자 or 변수) = (int or str or float)(문자 or 변수)를 해야한다.
 
 # print(year - age, '년에 태어나셨군요! 키를 입력해주세요.') 
@@ -138,12 +138,12 @@
 # %     나머지
 # **    제곱
 
-a = 10
-b = 3
-print(a + b)
-print(a - b)
-print(a * b)
-print(a / b)
-print(a // b)
-print(a % b)
-print(a ** b)
+# a = 10
+# b = 3
+# print(a + b)
+# print(a - b)
+# print(a * b)
+# print(a / b)
+# print(a // b)
+# print(a % b)
+# print(a ** b)
