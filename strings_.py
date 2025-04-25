@@ -18,9 +18,9 @@
 # ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ #
 
 
-string0 = 'cit academy'
-print (string0)
-print()
+# string0 = 'cit academy'
+# print (string0)
+# print()
 
 # split (문자열)
 # 문자열을 문자열로 나누어 리스트로 리턴
@@ -52,29 +52,71 @@ print()
 # ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ #
 
 
-bookname = "hello java"
-number = "20B1A"
-print(bookname)
-print(number)
-print()
+# bookname = "hello java"
+# number = "20B1A"
+# print(bookname)
+# print(number)
+# print()
 
-print("Q1. bookname에서 'java'를 'python'으로 고치시오.")
-bookname = bookname.replace('java', 'python')
-print(bookname)                          
-print()
+# print("Q1. bookname에서 'java'를 'python'으로 고치시오.")
+# bookname = bookname.replace('java', 'python')
+# print(bookname)                          
+# print()
 
-print("Q2.bookname의 문자열 개수를 출력하시오.")
-print(len(bookname))
-print()
+# print("Q2.bookname의 문자열 개수를 출력하시오.")
+# print(len(bookname))
+# print()
 
-print("Q3.bookname의 문자열를(을) 모두 대문자로 바꾸시오.")
-bookname = bookname.upper()
-print(bookname)
-print()
+# print("Q3.bookname의 문자열를(을) 모두 대문자로 바꾸시오.")
+# bookname = bookname.upper()
+# print(bookname)
+# print()
 
-print("Q4.두변수의 'A'의 총 개수를 출력하시오.")
-boo = bookname.count('A')
-num = number.count('A')
-print(boo + num)
+# print("Q4.두변수의 'A'의 총 개수를 출력하시오.")
+# boo = bookname.count('A')
+# num = number.count('A')
+# print(boo + num)
 
 
+# ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ #
+
+
+# 문자 포맷팅   => 문자를 표현하는 따옴표안에 포맷팅 기호를 적어야 함 
+# 문자 포맷팅을 사용하는 이유 : 여러개의 변수와 문자를 같이 출력하는 경우 콤마(,)를 사용시 의도하지 않은
+# 띄어쓰기가 발생하기 때문, 포ㅁ맷팅을 이용하면 내가 원하는 위치에 변수의 값이 들어감
+
+# Hello CIT    <= 이렇게 출력하고 싶음
+# a = "Hello"
+# b = "CIT"
+# print(a,b)                  # 콤마를 사용할 경우 자동으로 띄어쓰기가 되어 출력시 띄어쓰기를 계산을 해야함 
+#                             # 그리고 콤마의 경우 사용할 수 있는 수량이 정해져있어 많은 변수의 값을 출력 불가
+# print("%s %s" % (a, b))     # 포맷팅을 사용할 경우 내가 원하는 위치에 변수 값이 들어가므로 커스텀이 용이
+
+
+# 포맷팅 기호   => 따옴표 안에 적어야함
+# 문자(str)    => %s
+# 실수(float)  => %f
+# 정수(int)    =>
+# 위 포맷팅 기호는 변수의 자료형의 맞게 사용
+
+# 1. 1개의 변수를 출력할때
+# print(" %f " % (변수명))              변수명의 값이 %f 위치에 들어감
+# 2. 2개 이상의 변수를 출력할때
+# print("%f %s" % (A변수명, B변수명))   A변수명의 값이 %f위치에 들어가고 B변수명의 값이 %s 위치에 들어감
+
+
+# My name is park! and my age is 15. <=이렇게 출력하고 싶음
+# name = "Park"   # 문자이기 때문에 %s
+# print("My name is %s! And my age is 15." % (name))
+
+# i = "My"    # 문자이기 때문에 %s
+# print("%s name is %s! And my age is 15."% (i, name))
+
+# age = 15    # 정수이기 때문에 %d
+# print("%s name is %s! And my age is %d."% (i,name,age))
+# print("%d %d" % (age,age))
+
+
+# 포맷팅의소수점 표시
+# 실수의 경우 %f를 사용
+# %f 사용시 기본 값은 소수점 6번째 자리 수 까지 출력. 정확히는 7번째자리수에서 반올림한 후 6자리 까지 출력.
