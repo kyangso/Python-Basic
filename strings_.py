@@ -110,11 +110,12 @@
 # I = "the"   
 # E = "best"
 # Y = "academy"
+# M = '!'
 # F = "음식이"
 # G = "친절하고"
 # J = "선생님이"
 # N = "맛있어용^^"  # 문자이기 때문에 %s
-# print("%s %s %s %s! %s %s %s %s" % (I,E,Y,P, F,G,J,N))
+# print("%s %s %s %s%s %s %s %s %s" % (I,E,Y,P, M, F,G,J,N))
 
 # i = My    # 문자이기 때문에 %s
 # print("%s name is %s! And my age is 15."% (i, name))
@@ -171,7 +172,36 @@
 # \'    ' 을 출력
 # \"    " 을 출력
 
-# print("야!!!!!!\n.\n.\n.\n구르트 아줌마\t 3000원")     # \n 사용
+# print("야!!!!!!\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n구르트 아줌마\t 3000원")     # \n 사용
 # print("금 덩 이\t12억3000만원")     # \t 사용
 # print("Hello\\CIT")     # \\ 사용
 # print("\' \"")
+
+
+
+# ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ #
+
+
+name = ["bell", "sona", "rick", "tony", "jade"]
+score = [ 52, 96, 32, 73, 85]
+print(name)
+print(score)
+print()
+
+print("Q1.name에서 \"sona\"를 \"kona\"로 바꾸시오.replace 함수 이용")
+if('sona' in name) :                                # 먼저 'sona'의 인덱스 번호 찾아 idx 변수에 저장장           
+    idx = name.index("sona")                        # 값 변경을 위한 'sona'의 인덱스 번호 찾아 idx 변수에 저장
+    name[idx] = name[idx].replace("sona", "kona")   # replace()함수를 이용하여 'sona'를 'kona'로 변경경
+else:                                               # 'sona'가 리스트에 없는 경우우
+    print("sona 없음")
+print(name)
+print()
+
+
+print("Q2.name의 모든 'o'를 \"ecoto\"로 바꾸시오.")
+# if('kona', 'tony' in name) :
+#     name[1] = name[1].replace('kona', 'kecotona')
+#     name[3] = name[3].replace('tony', 'tecotony')
+# else :
+#     print("systemd_'name-error404' reason - no o.")
+# print(name)
