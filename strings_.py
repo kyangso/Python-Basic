@@ -189,7 +189,7 @@ print(score)
 print()
 
 print("Q1.name에서 \"sona\"를 \"kona\"로 바꾸시오.replace 함수 이용")
-if('sona' in name) :                                # 먼저 'sona'의 인덱스 번호 찾아 idx 변수에 저장장           
+if('sona' in name) :                                # 리스트에 sona가 있는지 확인
     idx = name.index("sona")                        # 값 변경을 위한 'sona'의 인덱스 번호 찾아 idx 변수에 저장
     name[idx] = name[idx].replace("sona", "kona")   # replace()함수를 이용하여 'sona'를 'kona'로 변경경
 else:                                               # 'sona'가 리스트에 없는 경우우
@@ -199,9 +199,15 @@ print()
 
 
 print("Q2.name의 모든 'o'를 \"ecoto\"로 바꾸시오.")
-# if('kona', 'tony' in name) :
-#     name[1] = name[1].replace('kona', 'kecotona')
-#     name[3] = name[3].replace('tony', 'tecotony')
-# else :
-#     print("systemd_'name-error404' reason - no o.")
-# print(name)
+for idx in range(0, 5, 1) :                              # 여러번 반복할떈 반복문 사용
+                                                         # 문자열에서 대체할땐 무조건 replace(그전에 먼저 idx번호를 알아내고)
+    if('o' in name[idx]) :
+        name[idx] = name[idx].replace('o', 'ecoto')
+print(name)
+print()
+
+print("Q3.name의 원소들을 모두 출력을 하시오.")
+print(name)
+print()
+
+print("Q4.name 리스트에서 'co'가 있으면 분할하여 name 리스트의 맨 뒤에 추가하시오")
