@@ -22,7 +22,7 @@
 # print (string0)
 # print()
 
-# split (문자열)
+# split(문자열)
 # 문자열을 문자열로 나누어 리스트로 리턴
 # 만약에 나눌 문자가 없을 경우 해강 문자열 전체를 하나의 리스트로 생성
 # print("split('a') :", string0.split('a'))
