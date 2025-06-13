@@ -210,4 +210,27 @@ print("Q3.name의 원소들을 모두 출력을 하시오.")
 print(name)
 print()
 
-print("Q4.name 리스트에서 'co'가 있으면 분할하여 name 리스트의 맨 뒤에 추가하시오")
+print("Q4.name 리스트에서 'co'가 있으면 분할하여 name 리스트의 맨 뒤에 추가하시오")                                                                                         
+for i in name:                       # name 리스트의 값을 전체 반복 하여 변수1에저장                                                                                               
+    if("co" in i):                   # i에'co'가 있을경우 실행,즉 문자열 안에   'co'가 있으면 실행                                  
+        idx = name.index(i)          # 값 삭제및 변경을 위해 'co'가 들어간 문자열의 인덱스 번호를 찾아 idx변수에 저장
+        sp = i.split("co")           # 'co'가 들어간 문자열을 'co'기준으로 나눔
+                                     # split()를 사용하면 나눠진 문자열은 리스트 형태로 sp변수에 저장
+        del(name[idx])               # 'co'가 들어간 문자열은 리스트에서 삭제
+        # name = name + sp           # 'co'를 기준으로 나눠진 리스트(sp)와 기존의 리스트(name)를 더함
+                                     # append를 안하는 이유는 append를 사용할 경우 2중 리스트가 됨
+                                     # 아래 반복문을 사용하던지, 현재 코드의 리스트의 덧셈을 사용하던지 둘중 하나를 진행해야함
+
+                                     # 반복문을 사용하여 분할된 문자열이 있는 sp리스트의 값을 name변수에 저장
+        for k in sp:
+            name.append(k)
+print(name)
+print()
+
+print("Q5.name의 원소들을 모두 출력을 하시오.")
+print(name)
+print()
+
+print("Q6.score의 평균을 구하고 출력을 하시오.")
+avg = sum(score) / len(score)
+print(avg)

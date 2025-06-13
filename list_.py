@@ -146,7 +146,7 @@
 
 # print("Q3. del 함수를 이용해 lsit0의 3번째 원소를 삭제 하시오.")
 # del(list0[3])
-# print(list0)
+# print(list0)                                                                                
 # print()
 
 # print("Q4. del 함수를 이용해 list0의 5번째 원소를 삭제 하시오.")
