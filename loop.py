@@ -189,6 +189,34 @@
 
 
 # range() 내부에 변수를 이용가능
+# 이것을 무시하기 위해서는 print() 안에 ,end=''을 사용한다
+# 정확히 ,end='문자'의 뜻은 어떤 내용을 출력하고 뒤에 줄 바꿈을 하지 않은 후 문자를 추가이다. 보통 빈칸으로 많이 사용
+# for i in range(0, 5, 1):
+#     print('cit ', end='')    # 한줄에 반복한 결과출력
+# print()
+    
+# for i in range(0, 5, 1):
+#     print('cit', end='@')
+# print()
+
+
+# ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ #
+
+
+# 원재 코드
+# for i in range(1, 6, 1):
+#     for j in range(1, i, 1):
+#         print('* ', end='')
+#     print('*')
+
+
+# 쌤 코드
+# for i in range(1, 6, 1):
+#     for j in range(0, i, 1):
+#         print('* ', end='')
+#     print()
+
+
 # for i in range(1, 10, 1):       # range() 내부에서 바깥 반복 변수 사용
 #     for j in range(1, i+1, 1):
 #         print(i, '*', j, '=', i*j)
@@ -226,30 +254,9 @@
 
 # [줄바꿈 무시]
 # print()를 사용하게 되면 자동으로 줄을 바꾼다
-# 이것을 무시하기 위해서는 print() 안에 ,end=''을 사용한다
-# 정확히 ,end='문자'의 뜻은 어떤 내용을 출력하고 뒤에 줄 바꿈을 하지 않은 후 문자를 추가이다. 보통 빈칸으로 많이 사용
-# for i in range(0, 5, 1):
-#     print('cit ', end='')    # 한줄에 반복한 결과출력
-# print()
-    
-# for i in range(0, 5, 1):
-#     print('cit', end='@')
-# print()
-
-
-# ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ #
-
-
-# 원재 코드
-# for i in range(1, 6, 1):
-#     for j in range(1, i, 1):
-#         print('* ', end='')
-#     print('*')
-
-
-# 쌤 코드
-# for i in range(1, 6, 1):
-#     for j in range(0, i, 1):
-#         print('* ', end='')
-#     print()
-
+# 1 , 2, 3  in the disappered s----------k-------------y
+# the star that is scared of ;ight is soon, falling
+# shooting star(X2)
+# oh, oh, oh, oo-oh
+# shootin light(X2)
+# ah, ahah , ahahahah
