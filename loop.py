@@ -130,29 +130,32 @@
 # ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ #
 
 
-# while(True):
-#     print("선택지를 선택해주세요")
-#     print("[1. hello 출력]")
-#     print("[2. hi 출력]")
-#     print("{3. 나 가 기}")
-#     menu = int(input())
+while(True):
+    print("선택지를 선택해주세요")
+    print("[1. hello 출력]")
+    print("[2. hi 출력]")
+    print("{3. 나 가 기}")
+    print("{4. ㅈ ---ㅓㄹ--대ㅔ--입력--하지 ㅁ ㅏ----}")
+    menu = int(input())
 
-#     if(menu == 1):
-#         print("hello")
-#     elif(menu == 2):
-#         print("hi")
-#     elif(menu == 3):
-#         print("나 가 기[3]을 선택하셨습니다 메뉴 프로그램을 종료합니다..")
-#         break
-#     else:
-#         print("1~3 숫자만 입력이 가능합니다.")
-#         print(menu, "말고 다른것을 입력해주세요.")
-#         print()
-#         continue
+    if(menu == 1):
+        print("hello")
+    elif(menu == 2):
+        print("hi")
+    elif(menu == 3):
+        print("나 가 기[3]을 선택하셨습니다 메뉴 프로그램을 종료합니다..")
+        break
+    elif(menu == 4):
+        print("왜 입력했어?왜 입력했어?왜 입력했어?왜 입력했어?왜 입력했어?왜 입력했어?왜 입력했어?왜 입력했어?왜 입력했어?")
+    else:
+        print("1~3 숫자만 입력이 가능합니다.")
+        print(menu, "말고 다른것을 입력해주세요.")
+        print()
+        continue
 
 
-#     print()
-#     print()
+    print()
+    print()
 
 
 

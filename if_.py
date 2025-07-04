@@ -153,6 +153,6 @@
 #     elif(is_member == "no"):
 #         print("청소년 비회원님, 회원 가입을 해주세요.")
 #     else:
-        # print("대답은 yes,no로만 해주세요.")
+#         print("대답은 yes,no로만 해주세요.")
 
 
