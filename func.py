@@ -195,3 +195,52 @@
 # ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ #
 
 
+# 함수  밖에    있는    변수의  값을    함수 내부에서 변경하    는법법
+# global 변수
+# 위 형식으로 함수 내부에서 함수 밖에 있는 변   수의 값을 변경할 수 있음음
+# glo   bal을 사용 안해도 함수 내qn에서 값을 참조는 가능하지만 값   변경은 불가능능
+
+# bmi = 0
+
+# def BMI(height, weight):
+#     global bmi
+# global bmi = 0
+#     height = height / 100
+#     bmi = weight / (height*height)
+
+#     return bmi
+
+# print(bmi)
+# print(BMI(178, 80))
+# print(bmi)
+
+
+# ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ #
+
+
+# 재귀함수
+# 함수 내부에서 자기자신을 호출하는 함수
+# def function():
+#       print('Hello')
+#       input()
+#       function()           # 자기 자신을 호출
+
+# function()
+
+# 피보나치 수
+# https://pythontutor.com/render.html#mode=display
+# def fibonacci(a,b):
+#     c = a + b
+#     if(a < 100):
+#         print(a,end='  ')
+#         return fibonacci(b, c)  # return None이 계속 반복되어서 호출한 함수들이 종료된다
+#     else:
+#         return                  # return하는 값 또는 변수가 없기 때문에 NoNe이 return됨
+    
+# fibonacci(1, 1)
+# print()
+
+
+# ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ #
+
+
